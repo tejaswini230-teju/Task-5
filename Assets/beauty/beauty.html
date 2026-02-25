@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShopEasy</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold" href="../../index.html">
+      ShopEasy
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+
+      <form class="d-flex col-12 col-lg-4 my-3 my-lg-0 me-lg-4">
+        <input class="form-control me-2" type="search" placeholder="Search products...">
+        <button class="btn btn-light">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+
+      <ul class="navbar-nav ms-lg-auto align-items-lg-center">
+
+        <li class="nav-item">
+          <a class="nav-link" href="../../index.html">
+            <i class="bi bi-house"></i> Home
+          </a>
+        </li>
+
+        <li class="nav-item dropdown" >
+          <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+           <i class="bi bi-grid"></i> Categories
+          </a>
+
+          <ul class="dropdown-menu" >
+            <li><a class="dropdown-item" href="../electronics/electronics.html">Electronics</a></li>
+            <li><a class="dropdown-item" href="../fashion/fashion.html">Fashion</a></li>
+            <li><a class="dropdown-item" href="../home/home.html">Home & Living</a></li>
+            <li><a class="dropdown-item" href="../sports/sports.html">Sports</a></li>
+             <li><a class="dropdown-item" href="../books/books.html">Books</a></li>
+            <li><a class="dropdown-item" href="../beauty/beauty.html">Beauty</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../../about.html">
+            <i class="bi bi-info-circle"></i> About
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../../contact.html">
+            <i class="bi bi-envelope"></i> Contact
+          </a>
+        </li>
+
+        <li class="nav-item ms-lg-3">
+          <a href="../../cart.html" class="btn btn-warning position-relative">
+            <i class="bi bi-cart"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill ">
+            </span>
+          </a>
+        </li>
+        
+        <li class="nav-item ms-lg-3">
+          <a class="nav-link" href="../../Singin.html">
+            <i class="bi bi-person-circle"></i> My Account
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="bg-success text-white py-4">
+<div class="container">
+<h2><i class="bi bi-brush me-2"></i>Beauty Products</h2>
+</div>
+</div>
+
+<div class="container py-5">
+<div class="row">
+
+<div class="col-lg-3 mb-4">
+<div class="card shadow-sm">
+<div class="card-body">
+<h5 class="mb-3"><i class="bi bi-funnel"></i> Filters</h5>
+
+<label class="form-label">Price Range</label>
+<input type="range" class="form-range">
+
+<div class="form-check mt-3">
+<input class="form-check-input" type="checkbox">
+<label class="form-check-label">4 Star & Up</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="checkbox">
+<label class="form-check-label">In Stock</label>
+</div>
+
+<button class="btn btn-primary w-100 mt-3">Apply Filters</button>
+
+</div>
+</div>
+</div>
+
+
+<div class="col-lg-9">
+<div class="row g-4">
+
+<div class="col-6 col-md-3 col col-sm-2">
+    <div class="card h-100 d-flex flex-column">
+    <div class="ratio ratio-1x1">
+<img src="blush" class="w-100 h-100 object-fit-cover"></div>
+<div class="card-body d-flex flex-column text-center">
+<h5 class="fw-semibold mb-3 small">Blush powders</h5>
+<p class="fw-bold">₹799 
+    <span class="text-decoration-line-through text-muted small">₹1799</span></p>
+<button class="btn btn-primary w-100" 
+        data-bs-toggle="modal" 
+        data-bs-target="#addCartModal">
+  Add to cart
+</button>
+</div>
+</div>
+</div>
+
+<div class="col-6 col-md-3 col col-sm-2">
+    <div class="card h-100 d-flex flex-column">
+    <div class="ratio ratio-1x1">
+<img src="compact poder" class="w-100 h-100 object-fit-cover"></div>
+<div class="card-body d-flex flex-column text-center">
+<h5 class="fw-semibold mb-3 small">Compact Powder</h5>
+<p class="fw-bold">₹899</p>
+<button class="btn btn-primary w-100" 
+        data-bs-toggle="modal" 
+        data-bs-target="#addCartModal">
+  Add to cart
+</button>
+</div>
+</div>
+</div>
+
+
+<div class="col-6 col-md-3 col col-sm-2">
+   <div class="card h-100 d-flex flex-column">
+    <div class="ratio ratio-1x1">
+<img src="hair serum.jpg" class="w-100 h-100 object-fit-cover"></div>
+<div class="card-body d-flex flex-column text-center">
+<h5 class="fw-semibold mb-3 small">Hair serum</h5>
+<p class="fw-bold">₹199</p>
+<button class="btn btn-primary w-100" 
+        data-bs-toggle="modal" 
+        data-bs-target="#addCartModal">
+  Add to cart
+</button>
+</div>
+</div>
+</div>
+
+<div class="col-6 col-md-3 col col-sm-2">
+        <div class="card h-100 d-flex flex-column">
+    <div class="ratio ratio-1x1">
+<img src="Kajal.webp" class="w-100 h-100 object-fit-cover"></div>
+<div class="card-body d-flex flex-column text-center">
+<h5 class="fw-semibold mb-3 small">Kajal for eye lash</h5>
+<p class="fw-bold">₹129</p>
+<button class="btn btn-primary w-100" 
+        data-bs-toggle="modal" 
+        data-bs-target="#addCartModal">
+  Add to cart
+</button>
+</div>
+</div>
+</div>
+
+<div class="col-6 col-md-3 col col-sm-2">
+    <div class="card h-100 d-flex flex-column">
+    <div class="ratio ratio-1x1">
+<img src="lipstick" class="w-100 h-100 object-fit-cover"></div>
+<div class="card-body d-flex flex-column text-center">
+<h5 class="fw-semibold mb-3 small">Revlon lipstick</h5>
+<p class="fw-bold">₹739</p>
+<button class="btn btn-primary w-100" 
+        data-bs-toggle="modal" 
+        data-bs-target="#addCartModal">
+  Add to cart
+</button>
+</div>
+</div>
+</div>
+
+<div class="col-6 col-md-3 col col-sm-2">
+   <div class="card h-100 d-flex flex-column">
+    <div class="ratio ratio-1x1">
+<img src="moisturizing cream" class="w-100 h-100 object-fit-cover"></div>
+<div class="card-body d-flex flex-column text-center">
+<h5 class="fw-semibold mb-3 small">Moisturizing cream</h5>
+<p class="fw-bold">₹259</p>
+<button class="btn btn-primary w-100" 
+        data-bs-toggle="modal" 
+        data-bs-target="#addCartModal">
+  Add to cart
+</button>
+</div>
+</div>
+</div>
+<div class="col-6 col-md-3 col col-sm-2">
+    <div class="card h-100 d-flex flex-column">
+    <div class="ratio ratio-1x1">
+<img src="Roller-Mascara" class="w-100 h-100 object-fit-cover"></div>
+<div class="card-body d-flex flex-column text-center">
+<h5 class="fw-semibold mb-3 small">Roller-Mascara</h5>
+<p class="fw-bold">₹156</p>
+<button class="btn btn-primary w-100" 
+        data-bs-toggle="modal" 
+        data-bs-target="#addCartModal">
+  Add to cart
+</button>
+</div>
+</div>
+</div>
+
+<div class="col-6 col-md-3 col col-sm-2">
+   <div class="card h-100 d-flex flex-column">
+    <div class="ratio ratio-1x1">
+<img src="foundation" class="w-100 h-100 object-fit-cover"></div>
+<div class="card-body d-flex flex-column text-center">
+<h5 class="fw-semibold mb-3 small">Foundation</h5>
+<p class="fw-bold">₹389</p>
+<button class="btn btn-primary w-100" 
+        data-bs-toggle="modal" 
+        data-bs-target="#addCartModal">
+  Add to cart
+</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="modal fade" id="addCartModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title w-100">
+          <i class="bi bi-check-circle"></i> Added to Cart
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p class="fs-5">Product added successfully!</p>
+        <div class="d-flex justify-content-center gap-3 mt-4">
+          
+      
+          <button class="btn btn-secondary" data-bs-dismiss="modal">
+            Continue Shopping
+          </button>
+
+          <a href="../../cart.html" class="btn btn-success">
+            View Cart
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer class="bg-dark text-light pt-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <h4 class="fw-bold">
+          <span class="text-danger">Shop</span>Easy
+        </h4>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3">
+        <h5 class="fw-bold mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="../../index.html" class="text-decoration-none text-light">Home</a></li>
+          <li class="mb-2"><a href="../../cart.html" class="text-decoration-none text-light">Cart</a></li>
+          <li class="mb-2"><a href="../../about.html" class="text-decoration-none text-light">About</a></li>
+          <li class="mb-2"><a href="../../contact.html" class="text-decoration-none text-light">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3">
+        <h5 class="fw-bold mb-3">Support</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-decoration-none text-light">FAQ</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none text-light">Shipping Policy</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none text-light">Returns</a></li>
+          <li class="mb-2"><a href="#" class="text-decoration-none text-light">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <h5 class="fw-bold mb-3">Follow Us</h5>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-light fs-5 text-decoration-none">f</a>
+          <a href="#" class="text-light fs-5 text-decoration-none">t</a>
+          <a href="#" class="text-light fs-5 text-decoration-none">i</a>
+          <a href="#" class="text-light fs-5 text-decoration-none">▶</a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary mt-5">
+
+    <div class="bg-dark text-white text-center py-3">
+        © 2026 ShopEasy. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
